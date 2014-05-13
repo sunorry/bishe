@@ -1,5 +1,5 @@
 body {
-  padding: 50px;
+  padding-top: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -13,4 +13,48 @@ a {
   height: 50px;
   border-left-color: #111415;
   border-right-color: #646668;
+}
+
+
+h1, p {
+  font-family: "微软雅黑";
+}
+.index-banner {
+  height: 490px;
+  background: #c5c4c0 url("../images/banner_bg.jpg") center top no-repeat fixed;
+}
+.index-banner-wrap {
+  width: 1080px;
+  height: 432px;
+  margin: 0 auto;
+  position: relative;
+  background: url("../images/banner_bg2.png") center top no-repeat;
+}
+.index-banner-inner {
+  padding: 60px 60px 60px 10px;
+}
+.index-banner-inner h1 {
+  color: #fff;
+  margin-bottom: 50px;
+}
+.index-banner-inner p{
+  color: #fbfbfb;
+  font-size: 24px;
+}
+.divider-vertical {
+  border-style: solid;
+  border-width: 1px;
+  opacity: .5;
+  height: 50px;
+  border-left-color: #111415;
+  border-right-color: #646668;
+}
+.index-banner-action {
+  position: absolute;
+  bottom: 80px;
+  left: 10px;
+}
+.index-banner-action .btn-success {
+  padding: 15px 50px;
+  font-size: 24px;
 }
