@@ -26,6 +26,15 @@ $(function(){
 
   function success(data){
     var arr = data.list;
+    var combine = function(loc) {
+      return [
+        '<button type="button" data-toggle="modal" data-target="#location" class="btn btn-success">' + loc + '</button>'
+      ]
+    };
+    var arr2 = [];
+    for(var i=0; i<arr.length; i++) {
+      arr2.push
+    }
   }
 
 
