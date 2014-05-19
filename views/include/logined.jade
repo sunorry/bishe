@@ -1,0 +1,19 @@
+button(type='button', class='btn btn-success location', data-toggle='modal' data-target='#locModal') A
+span.glyphicon.glyphicon-arrow-right
+button(type='button', class='btn btn-success location', data-toggle='modal' data-target='#locModal') B
+span.glyphicon.glyphicon-arrow-right
+button(type='button', class='btn btn-success location', data-toggle='modal' data-target='#locModal') A
+
+
+//- Modal
+div(class="modal fade", id="locModal", tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
+  .modal-dialog
+    .modal-content
+      .modal-header
+        button(type="button", class="close", data-dismiss="modal", aria-hidden="true") &times;
+        h4.modal-title choose
+      .modal-body
+        p sunorry
+      .modal-footer
+        button(type="button", class="btn btn-default", data-dismiss="modal") Close
+        button(type="button", class="btn btn-primary") save changes

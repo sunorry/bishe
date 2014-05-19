@@ -5,9 +5,7 @@ $(function(){
   var ali = $('#nav li');
   var location = window.location.pathname;
 
-  // if(location == '/reg') {
-  //   ali.eq(2).addClass('active');
-  // }
+
   switch(location) {
     case '/login':
       ali.eq(1).addClass('active').siblings().removeClass('active');
@@ -20,4 +18,17 @@ $(function(){
       break;
   }
 
+  // load text.json for location
+  $('.location').click
+
+
+
+
+
+  $.ajax({
+    type: 'POST',
+    url: '../fake/test.json',
+    dataType: 'json',
+    data:{name: 'location'}
+  });
 });
