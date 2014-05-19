@@ -19,8 +19,14 @@ $(function(){
   }
 
   // load text.json for location
-  $('.location').click
+  $('.location').click({
 
+  });
+
+
+  function success(data){
+    var arr = data.list;
+  }
 
 
 
@@ -29,6 +35,7 @@ $(function(){
     type: 'POST',
     url: '../fake/test.json',
     dataType: 'json',
+    success: success,
     data:{name: 'location'}
   });
 });
