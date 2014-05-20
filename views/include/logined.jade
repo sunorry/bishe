@@ -1,8 +1,17 @@
-button(type='button', class='btn btn-success location', data-toggle='modal' data-target='#locModal') A
-span.glyphicon.glyphicon-arrow-right
-button(type='button', class='btn btn-success location', data-toggle='modal' data-target='#locModal') B
-span.glyphicon.glyphicon-arrow-right
-button(type='button', class='btn btn-success location', data-toggle='modal' data-target='#locModal') A
+//- button(type='button', class='btn btn-success', data-toggle='modal' data-target='#locModal') AAAA
+//- span.glyphicon.glyphicon-arrow-right
+//- button(type='button', class='btn btn-success', data-toggle='modal' data-target='#locModal') B
+//- span.glyphicon.glyphicon-arrow-right
+//- button(type='button', class='btn btn-success', data-toggle='modal' data-target='#locModal') A
+
+.container
+  .jumbotron
+    h1 使用规则
+    p 首先选择出发点，然后选择要去的地方，最后可选返回路程。
+    p
+      a(class="btn btn-lg btn-primary", id="chooseLoc" href="javascript:;", role="button") CHOOSE
+
+.container.location
 
 
 //- Modal
@@ -17,3 +26,4 @@ div(class="modal fade", id="locModal", tabindex="-1", role="dialog", aria-labell
       .modal-footer
         button(type="button", class="btn btn-default", data-dismiss="modal") Close
         button(type="button", class="btn btn-primary") save changes
+

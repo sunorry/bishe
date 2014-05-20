@@ -18,33 +18,35 @@ $(function(){
       break;
   }
 
-  // load text.json for location
-  $('.location').click({
-
-  });
-
 
   function success(data){
     var arr = data.list;
     var combine = function(loc) {
       return [
-        '<button type="button" data-toggle="modal" data-target="#location" class="btn btn-success">' + loc + '</button>'
-      ]
+        '<button type="button" data-toggle="modal" data-target="#locModal" class="btn btn-success">' + loc + '</button>'
+      ].join("");
     };
     var arr2 = [];
     for(var i=0; i<arr.length; i++) {
-      arr2.push
+      arr2.push(combine(arr[i].name));
     }
+    var html = arr2.join("");
+    console.log(html)
+    $('.location').html(html);
   }
 
-
-
-
-  $.ajax({
-    type: 'POST',
-    url: '../fake/test.json',
-    dataType: 'json',
-    success: success,
-    data:{name: 'location'}
+  $('#chooseLoc').click(function() {
+    $.ajax({
+      url: '../fake/test.json',
+      type: 'get',
+      dataType: 'json',
+      success: success,
+      data:{name: 'location'}
+    });
   });
+
+
+
+
+
 });
