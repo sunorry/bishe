@@ -31,7 +31,6 @@ $(function(){
       arr2.push(combine(arr[i].name));
     }
     var html = arr2.join("");
-    console.log(html)
     $('.location').html(html);
   }
 
